@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 7.3333335
     y: 50
     width: 1265.3334
@@ -22,6 +23,16 @@ MonoBehaviour:
   m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
+=======
+    x: 49
+    y: 53
+    width: 1440
+    height: 789
+  m_ShowMode: 4
+  m_Title: Inspector
+  m_RootView: {fileID: 6}
+  m_MinSize: {x: 875, y: 300}
+>>>>>>> Cards
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -43,6 +54,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 0
     width: 1265
     height: 623
@@ -53,6 +65,43 @@ MonoBehaviour:
   m_UseBottomView: 1
   m_BottomViewHeight: 20
 --- !u!114 &3
+=======
+    y: 30
+    width: 1440
+    height: 739
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
+  vertical: 0
+  controlID: 45
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: InspectorWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1133
+    y: 0
+    width: 307
+    height: 739
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 15}
+  - {fileID: 12}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &4
+>>>>>>> Cards
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -69,6 +118,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1265
     height: 30
   m_MinSize: {x: 0, y: 0}
@@ -78,6 +128,45 @@ MonoBehaviour:
   m_MainToolbar: {fileID: 16}
   m_LastLoadedLayoutName: 
 --- !u!114 &4
+=======
+    width: 223
+    height: 467.5
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 16}
+  m_Panes:
+  - {fileID: 16}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ProjectBrowser
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 467.5
+    width: 1133
+    height: 271.5
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 14}
+  m_Panes:
+  - {fileID: 14}
+  - {fileID: 19}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &6
+>>>>>>> Cards
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,6 +185,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 30
     width: 1265
     height: 573
@@ -104,6 +194,18 @@ MonoBehaviour:
   vertical: 0
   controlID: 15
 --- !u!114 &5
+=======
+    y: 0
+    width: 1440
+    height: 789
+  m_MinSize: {x: 875, y: 300}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_UseTopView: 1
+  m_TopViewHeight: 30
+  m_UseBottomView: 1
+  m_BottomViewHeight: 20
+--- !u!114 &7
+>>>>>>> Cards
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,6 +242,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 0
     width: 703
     height: 573
@@ -152,6 +255,14 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &7
+=======
+    y: 769
+    width: 1440
+    height: 20
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
+--- !u!114 &9
+>>>>>>> Cards
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,6 +281,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 703
     y: 0
+<<<<<<< HEAD
     width: 255
     height: 573
   m_MinSize: {x: 232, y: 492}
@@ -177,6 +289,15 @@ MonoBehaviour:
   vertical: 1
   controlID: 67
 --- !u!114 &8
+=======
+    width: 1133
+    height: 739
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
+  vertical: 1
+  controlID: 46
+--- !u!114 &10
+>>>>>>> Cards
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -193,6 +314,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 958
     y: 0
+<<<<<<< HEAD
     width: 307
     height: 573
   m_MinSize: {x: 277, y: 71}
@@ -203,6 +325,15 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &9
+=======
+    width: 1133
+    height: 467.5
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 47
+--- !u!114 &11
+>>>>>>> Cards
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -217,10 +348,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 0
     width: 255
     height: 252
+=======
+    x: 223
+    y: 0
+    width: 910
+    height: 467.5
+>>>>>>> Cards
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
@@ -311,10 +449,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 710.6667
     y: 332
     width: 253
     height: 300
+=======
+    x: 0
+    y: 486.5
+    width: 1132
+    height: 250.5
+>>>>>>> Cards
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -329,22 +474,38 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Objects
+=======
+    - Assets
+>>>>>>> Cards
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Objects
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\mattj\Desktop\CLUE CREW\CS78-CLUECREW\CS78-CLUECREW
+=======
+  - Assets
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: /Users/petraschuster/Desktop/CS78/CS78-CLUECREW/CS78-CLUECREW
+>>>>>>> Cards
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: dc580000
     m_LastClickedID: 22748
     m_ExpandedIDs: 00000000c4580000c6580000c858000000ca9a3b
+=======
+    m_SelectedIDs: b4580000
+    m_LastClickedID: 22708
+    m_ExpandedIDs: 00000000a0580000a2580000b458000000ca9a3b
+>>>>>>> Cards
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -372,7 +533,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000c4580000c6580000c8580000
+=======
+    m_ExpandedIDs: 00000000a0580000a2580000
+>>>>>>> Cards
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -400,7 +565,11 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: c6230000
+=======
+    m_ExpandedInstanceIDs: c623000000000000
+>>>>>>> Cards
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -427,8 +596,50 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 75.99823}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
+<<<<<<< HEAD
   m_DirectoriesAreaWidth: 115
 --- !u!114 &13
+=======
+  m_DirectoriesAreaWidth: 289
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Inspector
+    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1134
+    y: 19
+    width: 306
+    height: 718
+  m_ViewDataDictionary: {fileID: 0}
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_PreviewResizer:
+    m_CachedPref: 160
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
+  m_GlobalObjectId: 
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewWindow: {fileID: 0}
+--- !u!114 &16
+>>>>>>> Cards
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -448,6 +659,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 7.3333335
     y: 80
     width: 702
@@ -518,6 +730,43 @@ MonoBehaviour:
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
 --- !u!114 &14
+=======
+    x: 0
+    y: 19
+    width: 222
+    height: 446.5
+  m_ViewDataDictionary: {fileID: 0}
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 1352}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 34fbffff36fbffff
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: 5520428fda0584b938b1dbafb7f7c950
+--- !u!114 &17
+>>>>>>> Cards
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -537,10 +786,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: -21333.334
     y: -21303.334
     width: 702
     height: 552
+=======
+    x: 224
+    y: 19
+    width: 908
+    height: 446.5
+>>>>>>> Cards
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: b25f3f8aaf220d741a995d374d657272
@@ -553,9 +809,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -1.2992597, y: -5.538879, z: -1.3692788}
     speed: 2
     m_Value: {x: -1.2992597, y: -5.538879, z: -1.3692788}
+=======
+    m_Target: {x: 3.1206374, y: 0.4264183, z: -1.3728708}
+    speed: 2
+    m_Value: {x: -5.5, y: 0, z: 0.5}
+>>>>>>> Cards
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -604,11 +866,19 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
     speed: 2
+<<<<<<< HEAD
     m_Value: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_Size:
     m_Target: 16.307142
     speed: 2
     m_Value: 16.307142
+=======
+    m_Value: {x: 0.48211604, y: 0.51779467, z: -0.49293628, w: 0.5064281}
+  m_Size:
+    m_Target: 13.679328
+    speed: 2
+    m_Value: 15.474186
+>>>>>>> Cards
   m_Ortho:
     m_Target: 1
     speed: 2
