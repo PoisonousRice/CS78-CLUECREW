@@ -1,17 +1,5 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-	"process_id" : 679,
-=======
-	"process_id" : 4336,
->>>>>>> main
-=======
-	"process_id" : 6340,
->>>>>>> main
-=======
-	"process_id" : 7218,
->>>>>>> MouseControls
+	"process_id" : 15408,
 	"version" : "2020.3.17f1",
 	"app_path" : "C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Unity.exe",
 	"app_contents_path" : "C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data"
