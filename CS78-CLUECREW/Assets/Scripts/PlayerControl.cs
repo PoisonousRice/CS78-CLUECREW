@@ -5,42 +5,31 @@ using UnityEngine.AI;
 
 public class PlayerControl : MonoBehaviour
 {
-    NavMeshAgent agent;
-    public int energy;
+    public string playerName;
+    public NavMeshAgent agent;
+    int energy = 0;
+    bool myTurn;
 
+    
     // Start is called before the first frame update
     void Start()
     {
-        agent = this.GetComponent<NavMeshAgent>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-         
-    }
-
-    public void myTurn()
-    {
-        energy = rollDie();
-        Debug.Log("Dice Roll: " + energy);
-        //Popup text with # of energy
-    }
-    
-    public void checkSquare(GameObject square)
-    {
-        int dist = (int)Mathf.Abs(transform.position.x - square.transform.position.x) + (int)Mathf.Abs(transform.position.z - square.transform.position.z);
-
-        if (dist <= energy)
-        {
-            agent.SetDestination(square.transform.position);
-            energy -= dist;
-            Debug.Log("Remaining Squares: " + energy);
+        if (myTurn) {
+            energy = rollDie();
+            //Popup text with # of energy
         }
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
     }
 
-    int rollDie () 
-    {
-        return Random.Range(1, 6);
+    int rollDie() {
+        int temp = Random.Range(1, 6) + Random.Range(1, 6);
+        return temp;
     }
 }
