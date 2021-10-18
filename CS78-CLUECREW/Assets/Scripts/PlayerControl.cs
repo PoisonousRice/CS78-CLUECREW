@@ -5,95 +5,42 @@ using UnityEngine.AI;
 
 public class PlayerControl : MonoBehaviour
 {
-    public string playerName;
-    public NavMeshAgent agent;
-    int energy;
-    public bool isMyTurn = true;
-    bool moving = false;
-    
-    [HideInInspector] 
-    public int horizontal;
-    public int vertical;
+    NavMeshAgent agent;
+    public int energy;
 
     // Start is called before the first frame update
     void Start()
     {
-        myTurn();
+        agent = this.GetComponent<NavMeshAgent>();
     }
 
-    void myTurn()
-    {
-        energy = rollDie();
-        Debug.Log(energy);
-        //Popup text with # of energy
-    }
-    
     // Update is called once per frame
     void Update()
     {
-        if(isMyTurn && !moving)
+         
+    }
+
+    public void myTurn()
+    {
+        energy = rollDie();
+        Debug.Log("Dice Roll: " + energy);
+        //Popup text with # of energy
+    }
+    
+    public void checkSquare(GameObject square)
+    {
+        int dist = (int)Mathf.Abs(transform.position.x - square.transform.position.x) + (int)Mathf.Abs(transform.position.z - square.transform.position.z);
+
+        if (dist <= energy)
         {
-            if (energy > 0)
-            {
-                moving = true;
-                horizontal = (int)Input.GetAxisRaw("Horizontal");
-                vertical = (int)Input.GetAxisRaw("Vertical");
-                if ((horizontal != 0) | (vertical != 0))
-                {
-                    move(horizontal, vertical);
-                }
-                else
-                {
-                    moving = false;
-                }
-            }
+            agent.SetDestination(square.transform.position);
+            energy -= dist;
+            Debug.Log("Remaining Squares: " + energy);
         }
     }
 
     int rollDie () 
     {
         return Random.Range(1, 6);
-    }
-
-    void move (float horizontal, float vertical) 
-    {
-        if (horizontal == -1)
-        {
-            Debug.Log("Left");
-            //move left
-            agent.SetDestination(new Vector3(transform.position.x, transform.position.y, transform.position.z + 1));
-            energy -= 1;
-            Debug.Log(energy);
-            moving = false;
-        }
-        else if (horizontal == 1)
-        {
-            Debug.Log("Right");
-            //move right
-            agent.SetDestination(new Vector3(transform.position.x, transform.position.y, transform.position.z - 1));
-            energy -= 1;
-            Debug.Log(energy);
-            moving = false;
-        }
-        else if (vertical == -1)
-        {
-            Debug.Log("Down");
-            //move down
-            agent.SetDestination(new Vector3(transform.position.x - 1, transform.position.y, transform.position.z));
-            energy -= 1;
-            Debug.Log(energy);
-            moving = false;
-        }
-        else if (vertical == 1)
-        {
-            Debug.Log("Up");
-            //move up
-            agent.SetDestination(new Vector3(transform.position.x + 1, transform.position.y, transform.position.z));
-            energy -= 1;
-            Debug.Log(energy);
-            moving = false;
-        }
-        vertical = 0;
-        horizontal = 0;
     }
 }
