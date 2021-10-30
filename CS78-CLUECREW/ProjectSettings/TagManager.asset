@@ -3,7 +3,28 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Mustard
+  - Plum
+  - Green
+  - Peacock
+  - Scarlett
+  - White
+  - Knife
+  - Candlestick
+  - Revolver
+  - Rope
+  - Leadpipe
+  - Wrench
+  - Hall
+  - Lounge
+  - Dining
+  - Kitchen
+  - Ballroom
+  - Conservatory
+  - Billiard
+  - Library
+  - Study
   layers:
   - Default
   - TransparentFX
@@ -12,7 +33,7 @@ TagManager:
   - Water
   - UI
   - Trackersheet
-  - 
+  - GuessingSheet
   - 
   - 
   - 
