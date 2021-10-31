@@ -7,7 +7,7 @@ public class TrackerSheet : MonoBehaviour
 
     public LayerMask layerMask;
     public Camera cam;
-    public Material Material1;
+    public Material Material1, Material0;
 
     void Update()
     {
@@ -25,6 +25,7 @@ public class TrackerSheet : MonoBehaviour
         {
             GameObject hitObject = hitData.transform.gameObject;
             hitObject.GetComponent<MeshRenderer>().material = Material1;
+            
         }
     }
 

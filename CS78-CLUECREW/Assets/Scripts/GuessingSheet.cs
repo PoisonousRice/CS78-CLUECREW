@@ -10,7 +10,9 @@ public class GuessingSheet : MonoBehaviour
     public Material Material1;
     public aiControl aiScript;
     public GameObject[] guesses = new GameObject[3];
+    public GameObject rooms, characters, weapons;
     public int count = 0;
+    public string roomGuess;
 
     void Update()
     {
@@ -58,12 +60,26 @@ public class GuessingSheet : MonoBehaviour
 
             if(hitObject.name == "guessConfirm")
             {
-                for(int i = 0; i < 3; i++)
-                {
-                    Debug.Log(guesses[i]);
-                }
                 aiScript.checkGuess(guesses);
             }
         }
     }
+
+    public void resetSheet()
+    {
+        for (int i = 0; i < rooms.transform.childCount; i++)
+        {
+            rooms.transform.GetChild(i).gameObject.GetComponent<MeshRenderer>().material = Material0;
+        }
+        for (int i = 0; i < characters.transform.childCount; i++)
+        {
+            characters.transform.GetChild(i).gameObject.GetComponent<MeshRenderer>().material = Material0;
+        }
+        for (int i = 0; i < weapons.transform.childCount; i++)
+        {
+            weapons.transform.GetChild(i).gameObject.GetComponent<MeshRenderer>().material = Material0;
+        }
+        this.gameObject.SetActive(false);
+    }
 }
+

@@ -10,6 +10,8 @@ public class PlayerControl : MonoBehaviour
     public GameObject[] Cards;
     public Vector3[] cardLocs;
     public GameObject guessSheet;
+    public GameObject guessSheetRooms;
+    public Material mat;
 
     void Awake()
     {
@@ -52,9 +54,41 @@ public class PlayerControl : MonoBehaviour
         {
             agent.SetDestination(square.transform.position);
             GameObject tempParent = square.transform.parent.gameObject;
-            if (tempParent.name == "Study" || tempParent.name == "Library" || tempParent.name == "Billiard Room" || tempParent.name == "Conservatory" || tempParent.name == "Ballroom" || tempParent.name == "Hall" || tempParent.name == "Lounge" || tempParent.name == "Dining Room" || tempParent.name == "Kitchen")
+            if (tempParent.name == "Study")
             {
-                Guess();
+                Guess("Study check");
+            }
+            else if (tempParent.name == "Library")
+            {
+                Guess("Library check");
+            }
+            else if (tempParent.name == "Billiard Room")
+            {
+                Guess("Billiard room check");
+            }
+            else if (tempParent.name == "Conservatory")
+            {
+                Guess("Conservatory check");
+            } 
+            else if (tempParent.name == "Ballroom")
+            {
+                Guess("Ballroom check");
+            } 
+            else if (tempParent.name == "Hall")
+            {
+                Guess("Hall check");
+            } 
+            else if (tempParent.name == "Lounge")
+            {
+                Guess("Lounge check");
+            } 
+            else if (tempParent.name == "Dining Room")
+            {
+                Guess("Dining room check");
+            } 
+            else if (tempParent.name == "Kitchen")
+            {
+                Guess("Kitchen check");
             }
             else 
             {
@@ -69,9 +103,10 @@ public class PlayerControl : MonoBehaviour
         return Random.Range(1, 6);
     }
 
-    public void Guess ()
+    public void Guess (string n)
     {
         guessSheet.SetActive(true);
-        
+        guessSheetRooms.transform.Find(n).gameObject.GetComponent<MeshRenderer>().material = mat;
+        guessSheet.GetComponent<GuessingSheet>().guesses[2] = guessSheetRooms.transform.Find(n).gameObject;
     }
 }

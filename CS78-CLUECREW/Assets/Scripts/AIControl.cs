@@ -13,7 +13,7 @@ public class aiControl : MonoBehaviour
     PlayerControl apScript;
     public int count = 0;
     public GameObject[] answers = new GameObject[3];
-    public GameObject peopleCards, weaponCards, roomCards;
+    public GameObject peopleCards, weaponCards, roomCards, p1Tracker, p2Tracker, guessTracker;
     bool setup = true;
 
     // Start is called before the first frame update
@@ -78,6 +78,16 @@ public class aiControl : MonoBehaviour
                 activePlayer = players[count];
                 mouse.player = activePlayer;
                 apScript = activePlayer.GetComponent<PlayerControl>();
+                if(count == 1)
+                {
+                    p1Tracker.SetActive(false);
+                    p2Tracker.SetActive(true);
+                }
+                else
+                {
+                    p2Tracker.SetActive(false);
+                    p1Tracker.SetActive(true);
+                }
                 apScript.myTurn();
             }
         }
@@ -103,18 +113,23 @@ public class aiControl : MonoBehaviour
         if(correct)
         {
             Debug.Log("win");
+            guessTracker.GetComponent<GuessingSheet>().resetSheet();
         }
         else if (guessTags[0] == answerTags[0])
         {
             Debug.Log("correct character");
+            activePlayer.GetComponent<PlayerControl>().energy = 0;
+            guessTracker.GetComponent<GuessingSheet>().resetSheet();
         }
         else if (guessTags[1] == answerTags[1])
         {
             Debug.Log("correct weapon");
+            activePlayer.GetComponent<PlayerControl>().energy = 0;
         }
         else if (guessTags[2] == answerTags[2])
         {
             Debug.Log("correct room");
+            activePlayer.GetComponent<PlayerControl>().energy = 0;
         }
     }
 }
